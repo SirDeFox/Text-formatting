@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text formatting</title>
+    <style>
+        body {
+            font-size: 25px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: -26px;
+        }
+
+        @media (max-width: 520px) {
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        h2 {
+            font-size: inherit;
+            font-weight: 900;
+            color: green;
+        }
+
+        span {
+            color: blue;
+        }
+
+        dl:nth-child(odd),
+        dl:nth-child(even) {
+            padding: 5px 20px;
+            border-radius: 30px;
+        }
+
+        dl:nth-child(odd) {
+            background-color: rgb(231, 231, 231);
+        }
+
+        dd {
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Форматирование текста</h1>
+
+
+
+    <!-- none -->
+    <dl>
+        <dt>
+            <h2>none <span>(просто текст)</span></h2>
+        <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia neque. Optio,
+            est.
+            Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae vel.
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <b> -->
+    <dl>
+        <dt>
+            <h2>&lt;b&gt; <span>(выделяет текст жирным, не имеет смысл)</span></h2>
+        <dd>
+            <b>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae vel.
+            </b>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <strong> -->
+    <dl>
+        <dt>
+            <h2>&lt;strong&gt; <span>(выделяет текст жирным, имеет смысл)</span></h2>
+        <dd>
+            <strong>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+                neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+                vel.
+            </strong>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <i> -->
+    <dl>
+        <dt>
+            <h2>&lt;i&gt; <span>(выделяет текст курсивом, не имеет смысла)</span></h2>
+        <dd>
+            <i>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+                neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+                vel.
+            </i>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <strong> -->
+    <dl>
+        <dt>
+            <h2>&lt;em&gt; <span>(выделяет текст курсивом, имеет смысл)</span></h2>
+        <dd>
+            <em>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+                neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+                vel.
+            </em>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <mark> -->
+    <dl>
+        <dt>
+            <h2>&lt;mark&gt; <span>(выделяет текст жёлтым фоном)</span></h2>
+        <dd>
+            <mark>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+                neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+                vel.
+            </mark>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <small> -->
+    <dl>
+        <dt>
+            <h2>&lt;small&gt; <span>(уменьшает текст на одну условную одиницу)</span></h2>
+        <dd>
+            <small>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+                neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+                vel.
+            </small>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <del> -->
+    <dl>
+        <dt>
+            <h2>&lt;del&gt; <span>(перечёркивает текст)</span></h2>
+        <dd>
+            <del>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+                neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+                vel.
+            </del>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <ins> -->
+    <dl>
+        <dt>
+            <h2>&lt;ins&gt; <span>(подчёркивает текст)</span></h2>
+        <dd>
+            <ins>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+                neque.
+                Optio,
+                est.
+                Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+                vel.
+            </ins>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <sub> -->
+    <dl>
+        <dt>
+            <h2>&lt;sub&gt; <span>(подстрочный текст)</span></h2>
+        <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+            neque.
+            Optio,
+            est.
+            Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+            vel.
+            <sub>(подстрочный текст)</sub>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+    <!-- <sup> -->
+    <dl>
+        <dt>
+            <h2>&lt;sup&gt; <span>(надстрочный текст)</span></h2>
+        <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque ipsam tempore officia
+            neque.
+            Optio,
+            est.
+            Laboriosam, fugit labore ullam delectus totam sint ab nisi praesentium, vitae quisquam quae
+            vel.
+            <sup>(надстрочный текст)</sup>
+        </dd>
+        </dt>
+    </dl>
+
+
+
+</body>
+
+</html>
